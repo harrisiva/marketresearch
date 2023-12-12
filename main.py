@@ -1,3 +1,4 @@
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
 
@@ -5,6 +6,7 @@ from bs4 import BeautifulSoup as bs
 clubs = []
 
 try:
+    print("Scrapping smoothcomp rankings")
     for i in range(0, 3000):
         # Request the landing page from smoothcomp
         page_number = i 
